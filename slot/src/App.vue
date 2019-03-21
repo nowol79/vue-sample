@@ -15,6 +15,12 @@
         <p><img :src="C.message" alt="모모 이미지"></p>
       </div>
     </twice-card>
+      <br>
+    <twice-card class="sanders" :headerText="D.header">
+      <div>
+        <p v-html="D.message"> {{ D.message }}</p>
+      </div>
+    </twice-card>
   </div>
 </template>
 
@@ -42,6 +48,10 @@ export default {
         header: "모모이미지",
         footer: "출처: 네이버",
         message: "https://search.pstatic.net/common/?src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F201812%2F20181204121518422-6151793.jpg"
+      },
+      D: {
+        header: "나연신상",
+        message: "<table><tr><td>데뷔</td><td>2015.10.20|한국</td></tr><tr><td>장르</td><td>가요</td></tr></table>"
       },
     };
   }
